@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Support Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <img src="Contact_Hero_V2_edd8d07bad.webp" alt="image">
+  <div class="container">
+    <div class="typing" id="typingText"></div>
+    <form id="supportForm">
+      <input type="text" name="from_name" placeholder="Your Name" required />
+      <input type="email" name="user_email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Type your message here..." rows="6" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    
+    <div class="success-message" id="successMsg"></div>
+    <div class="error-message" id="errorMsg"></div>
+  </div>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
